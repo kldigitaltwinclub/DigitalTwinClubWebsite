@@ -1,3 +1,4 @@
+
 var gallery = document.querySelector("#gallery");
 var getVal = function (elem, style) {
   return parseInt(window.getComputedStyle(elem).getPropertyValue(style));
@@ -28,10 +29,4 @@ gallery.querySelectorAll("img").forEach(function (item) {
       item.classList.remove("byebye");
     });
   }
-});
-window.addEventListener("resize", resizeAll);
-gallery.querySelectorAll(".gallery-item").forEach(function (item) {
-  item.addEventListener("click", function () {
-    item.classList.toggle("full");
-  });
 });
